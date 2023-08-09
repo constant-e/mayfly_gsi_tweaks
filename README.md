@@ -2,12 +2,12 @@
 
 ## 优化内容
 1. android : 添加vendor中overlay的内容；UI圆角调整；全面屏调整
-2. com.android.systemui : 添加vendor中overlay的内容；UI圆角调整
+2. com.android.systemui : 添加vendor中overlay的内容；UI圆角调整；亮屏动画(从电源键处展开)优化
 3. /system/build.prop : 将音量阶数调整至15；默认音量阶数调整至10
 
 ## 使用方法
 1. 生成Magisk或KernelSU模块：  
-运行 make_module.sh (需要依赖：zip, aapt)  
+运行 make_module.sh (需要依赖：aapt, zip)  
 ```bash
 bash make_module.sh
 ```  
@@ -19,6 +19,19 @@ bash make_module.sh
 bash vendor_hardware_overlay/build/build.sh
 ```  
 会在vendor_hardware_overlay/build下生成两个apk文件，为android和com.android.systemui的overlay文件，选择适合的方法安装即可
+
+## Xiaomi 12S GSI部分已知问题
+1. 除在卡2的联通SIM卡外，其他SIM卡无法接收短信
+2. 指纹
+3. 自动亮度
+4. LineageOS Light下phh settings中无法切换至120HZ，系统无法识别机型
+5. bilibili等部分视频播放软件在播放中切至后台或锁屏后重新打开会导致视频画面卡住
+
+## Xiaomi 12S GSI不需要模块优化的问题的优化方法
+1. volte : 执行phh settings中的IMS选项中的全部内容后重启
+2. 5G : 拨号\*#\*#4636#\*#\*，进入第一项即可找到调整选项
+3. 双击亮屏 : 在phh settings中的Xiaomi选项中开启dt2w(double tap to wake)
+4. 相机优化 : 寻找谷歌相机相关教程或移植MIUI相机
 
 ## 使用的其他源代码
 1. TrebleDroid/vendor_hardware_overlay for vendor_hardware_overlay

@@ -27,6 +27,7 @@ bash vendor_hardware_overlay/build/build.sh
 4. 自动亮度（传感器正常，无选项）
 5. LineageOS Light下phh settings中无法切换至120Hz，系统无法识别机型
 6. bilibili在播放中切至后台、锁屏后重新打开等操作会导致视频画面卡住,疑似IjkMediaPlayerService崩溃导致，可以拖动进度条恢复播放
+7. 充电剩余时间显示异常
 
 ## Xiaomi 12S GSI不需要模块优化的问题的优化方法
 1. volte : 执行phh settings中的IMS选项中的全部内容后重启

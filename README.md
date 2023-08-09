@@ -25,7 +25,7 @@ bash vendor_hardware_overlay/build/build.sh
 2. 指纹
 3. 67W快充（小米私有协议不可用,实测最高支持20W PD快充）
 4. 自动亮度（传感器正常，无选项）
-5. LineageOS Light下phh settings中无法切换至120HZ，系统无法识别机型
+5. LineageOS Light下phh settings中无法切换至120Hz，系统无法识别机型
 6. bilibili在播放中切至后台、锁屏后重新打开等操作会导致视频画面卡住,疑似IjkMediaPlayerService崩溃导致，可以拖动进度条恢复播放
 
 ## Xiaomi 12S GSI不需要模块优化的问题的优化方法

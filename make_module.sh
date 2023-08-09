@@ -1,7 +1,7 @@
 echo "removing old module"
 rm mayfly_overlay.zip
 
-echo "build overlay apks"
+echo "building overlay apks"
 bash vendor_hardware_overlay/build/build.sh
 
 echo "making module"

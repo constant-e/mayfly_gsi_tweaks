@@ -3,4 +3,4 @@ mayfly_overlay.zip
 .idea
 .vscode
 .git
-module/system/product/overlay/*
+module/system/product/overlay/*.apk

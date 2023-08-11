@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="status_bar_padding_start">8dp</dimen>
-    <dimen name="status_bar_padding_end">8dp</dimen>
-    <dimen name="status_bar_padding_top">4dp</dimen>
-    <dimen name="status_bar_header_height_keyguard">40dp</dimen>
-    <dimen name="keyguard_carrier_text_margin">16dp</dimen>
-    <dimen name="system_icons_keyguard_padding_end">0dp</dimen>
-    <dimen name="rounded_corner_content_padding">4dp</dimen>
+    <!-- udfps (still broken)
+    <color name="config_udfpsColor">#ffffff</color>
+    <integer name="config_udfpsHbmType"></integer> unknow
+    -->
 
+    <!-- ui -->
+    <dimen name="abc_star_small">17dp</dimen>
     <dimen name="global_actions_corner_radius">28dp</dimen>
+    <dimen name="keyguard_carrier_text_margin">16dp</dimen>
     <dimen name="notification_corner_radius">28dp</dimen>
     <dimen name="notification_scrim_corner_radius">32dp</dimen>
     <dimen name="ongoing_appops_chip_bg_corner_radius">28dp</dimen>
     <dimen name="ongoing_call_chip_corner_radius">28dp</dimen>
+    <dimen name="physical_power_button_center_screen_location_y">1000px</dimen>
     <dimen name="qs_corner_radius">28dp</dimen>
     <dimen name="qs_footer_action_corner_radius">28dp</dimen>
     <dimen name="qs_security_footer_corner_radius">28dp</dimen>
+    <dimen name="rounded_corner_content_padding">0dp</dimen>
     <dimen name="rounded_slider_background_rounded_corner">32dp</dimen>
     <dimen name="rounded_slider_corner_radius">28dp</dimen>
     <dimen name="settingslib_dialogCornerRadius">28dp</dimen>
     <dimen name="split_divider_corner_size">28dp</dimen>
+    <dimen name="status_bar_padding_start">8dp</dimen>
+    <dimen name="status_bar_padding_end">8dp</dimen>
+    <dimen name="status_bar_padding_top">4dp</dimen>
+    <dimen name="status_bar_header_height_keyguard">40dp</dimen>
+    <dimen name="system_icons_keyguard_padding_end">0dp</dimen>
     <dimen name="volume_dialog_panel_width_half">28dp</dimen>
     <dimen name="volume_ringer_drawer_item_size_half">21dp</dimen>
     <dimen name="volume_dialog_slider_corner_radius">21dp</dimen>
     <dimen name="volume_dialog_track_corner_radius">21dp</dimen>
-    <dimen name="abc_star_small">17dp</dimen>
-
-    <dimen name="physical_power_button_center_screen_location_y">1000px</dimen>
 </resources>

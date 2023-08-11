@@ -53,7 +53,7 @@ cd mayfly_gsi_tweak && bash vendor_hardware_overlay/build/build.sh
 2. 5G：拨号\*#\*#4636#\*#\*，进入第一项即可找到调整选项。
 3. 双击亮屏：在Phh Treble Settings中的Xiaomi选项中开启DT2W。
 4. 相机优化：寻找谷歌相机相关教程或移植MIUI相机。
-5. AOD：（或通过模块）在phh settings中的Misc选项中开启Force Allow Always-On Display。
+5. AOD：（或通过模块）在Phh Treble Settings中的Misc选项中开启Force Allow Always-On Display。
 注：前4项未通过模块实现，无论是否安装模块都要执行。
 
 ## 使用的其他源代码

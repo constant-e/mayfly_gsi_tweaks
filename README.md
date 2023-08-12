@@ -7,7 +7,7 @@
 2. com.android.systemui：添加vendor中overlay的内容；UI圆角和间距调整；亮屏动画(从电源键处展开)优化。
 3. com.android.settings：开启120Hz选项。
 4. /system/build.prop：将音量阶数调整至15；默认音量阶数调整至10。
-注：由于未知原因，此项目android的overlay似乎在priority较小时不会生效，且生效时不会在framework-res.apk中体现，未在framework-res.apk中找到修改痕迹是正常现象。如需更高的优先级可以删除isStatic属性并在安装后手动启用overlay。
+注：由于未知原因，此项目android的overlay似乎在priority较小时不会生效，如需更高的优先级可以删除isStatic属性并在安装后手动启用overlay。
 
 ## 使用方法（模块）
 1. 安装依赖aapt git zip。

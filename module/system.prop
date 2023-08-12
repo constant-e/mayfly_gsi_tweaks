@@ -1,2 +1,10 @@
+# device model
+ro.product.brand=Xiaomi
+ro.product.manufacturer=Xiaomi
+ro.product.model=Xiaomi 12S
+ro.product.name=mayfly
+ro.product.device=mayfly
+
+# media vol steps
 ro.config.media_vol_steps=15
 ro.config.media_vol_default=10

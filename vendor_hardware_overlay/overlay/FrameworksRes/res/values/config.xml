@@ -81,6 +81,8 @@
     <!-- others -->
     <bool name="config_enableBurnInProtection">true</bool>
     <!-- <bool name="config_supportDoubleTapWake">true</bool> not work -->
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
     <bool name="config_useDevInputEventForAudioJack">true</bool>
     <bool name="config_unplugTurnsOnScreen">true</bool>
@@ -134,6 +136,6 @@
     <dimen name="status_bar_height_portrait">34dp</dimen>
     <dimen name="status_bar_height_landscape">34dp</dimen>
     <dimen name="tooltip_corner_radius">28dp</dimen>
-    <string name="config_mainBuiltInDisplayCutout">M -33 52 a 33 33 0 1 0 66 0 a 33 33 0 1 0 -66 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -33 52 a 33 33 0 1 0 66 0 a 33 33 0 1 0 -66 0 Z</string>
     <string name="config_mainBuiltInDisplayCutoutRectApproximation">M 0,0 H -33 V 87 H 33 V 0 H 0 Z</string>
 </resources>

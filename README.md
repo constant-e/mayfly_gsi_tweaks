@@ -6,7 +6,8 @@
 1. android：添加vendor和Xiaomi 12的Device tree中部分overlay的内容；UI圆角和间距调整；全面屏调整；开启自动亮度。
 2. com.android.systemui：添加vendor中overlay的内容；UI圆角和间距调整；亮屏动画(从电源键处展开)优化。
 3. com.android.settings：开启120Hz选项。
-4. /system/build.prop：将音量阶数调整至15；默认音量阶数调整至10。
+4. /system/build.prop：将音量阶数调整至15；默认音量阶数调整至10；添加机型信息。
+
 注：由于未知原因，此项目android的overlay似乎在priority较小时不会生效，如需更高的优先级可以删除isStatic属性并在安装后手动启用overlay。
 
 ## 使用方法（模块）

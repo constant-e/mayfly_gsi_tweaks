@@ -32,6 +32,7 @@ git clone https://github.com/EntityBug/mayfly_gsi_tweaks.gits
 cd mayfly_gsi_tweak && bash vendor_hardware_overlay/build/build.sh
 ```  
 4. 此方法会在vendor_hardware_overlay/build下生成android、com.android.settings和com.android.systemui的overlay文件，选择适合的方法安装即可。
+
 注：此方法不会修改/system/build.prop
 
 ## Xiaomi 12S GSI部分已知问题
@@ -53,7 +54,8 @@ cd mayfly_gsi_tweak && bash vendor_hardware_overlay/build/build.sh
 2. 5G：拨号\*#\*#4636#\*#\*，进入第一项即可找到调整选项。
 3. 双击亮屏：在Phh Treble Settings中的Xiaomi选项中开启DT2W。
 4. 相机优化：寻找谷歌相机相关教程或移植MIUI相机。
-5. AOD：（或通过模块）在phh settings中的Misc选项中开启Force Allow Always-On Display。
+5. AOD：（或通过模块）在Phh Treble Settings中的Misc选项中开启Force Allow Always-On Display。
+
 注：前4项未通过模块实现，无论是否安装模块都要执行。
 
 ## 使用的其他源代码

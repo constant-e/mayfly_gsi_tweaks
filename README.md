@@ -3,15 +3,25 @@
 测试中，不完善。
 
 ## 优化内容
-1. android：添加vendor和Xiaomi 12的Device tree中部分overlay的内容；UI圆角和间距调整；全面屏调整；开启自动亮度。
-2. com.android.systemui：添加vendor中overlay的内容；UI圆角和间距调整；亮屏动画(从电源键处展开)优化。
-3. com.android.settings：开启120Hz选项。
-4. /system/build.prop：将音量阶数调整至15；默认音量阶数调整至10；添加机型信息。
+1. 修复 自动亮度（体验不如官方）
+2. 修复 挖孔周围锯齿（屏幕四角锯齿仍存在）
+3. 修复 部分ROM无法识别机型
+4. 修复 AOD亮屏动画不正常
+5. 优化 状态栏边距
+6. 优化 系统圆角
+7. 优化 音量阶数
+8. 新增 高刷相关设置
+9. 新增 AOD开关
+10. 新增 小米的Vendor内容
 
-注：由于未知原因，此项目android的overlay似乎在priority较小时不会生效，如需更高的优先级可以删除isStatic属性并在安装后手动启用overlay。
+注：此项目android的overlay的priority设置为700，如需更高的优先级可以删除isStatic属性并在安装后手动启用overlay。
 
-## 使用方法（模块）
-1. 安装依赖aapt git zip。
+## 使用方法
+1. 在Release界面下载mayfly_overlay.zip
+2. 通过Magisk或KernelSU安装mayfly_overlay.zip
+
+## 从源代码构建（Linux）
+1. 安装依赖aapt（可选） git zip。
 2. 克隆此仓库：  
 ```bash
 git clone https://github.com/EntityBug/mayfly_gsi_tweaks.git
@@ -22,44 +32,28 @@ cd mayfly_gsi_tweaks && bash make_module.sh
 ```  
 4. 通过Magisk或KernelSU安装生成在项目根目录下的mayfly_overlay.zip。
 
-## 使用方法（只生成overlay文件）
-1. 安装依赖aapt git。
-2. 克隆此仓库：  
-```bash
-git clone https://github.com/EntityBug/mayfly_gsi_tweaks.gits
-```
-3. 运行vendor_hardware_overlay/build/build.sh：  
-```bash
-cd mayfly_gsi_tweak && bash vendor_hardware_overlay/build/build.sh
-```  
-4. 此方法会在vendor_hardware_overlay/build下生成android、com.android.settings和com.android.systemui的overlay文件，选择适合的方法安装即可。
-
-注：此方法不会修改/system/build.prop
-
 ## Xiaomi 12S GSI部分已知问题
 1. 除在卡2的联通SIM卡外，其他SIM卡无法接收短信。
 2. 指纹。
 3. 67W快充（小米私有协议不可用,实测最高支持20W PD快充）。
-4. LineageOS Light下phh settings中无法切换至120Hz（未测试新版是否解决），系统无法识别机型（可自行调整module/system.prop解决）。
-5. bilibili等在播放中暂停后继续播放会导致视频画面卡住，疑似IjkMediaPlayerService崩溃导致，可以拖动进度条恢复播放。不使用ijkplayer的app应无此问题。
-6. 充电剩余时间显示异常。
-7. 屏幕圆角锯齿仍存在。
-8. 部分UI圆角仍较小。
+4. bilibili等在播放中暂停后继续播放大概率会导致视频画面卡住，可以拖动进度条恢复播放。不使用ijkplayer的app应无此问题。
+5. 几个小bug：充电剩余时间显示异常，屏幕圆角锯齿仍存在，部分UI圆角仍较小。
 
 ## Xiaomi 12S GSI尚未测试的项目
 1. NFC。
 2. 红外。
 
-## Xiaomi 12S GSI不需要模块优化的问题的优化方法
-1. volte：执行phh settings中的IMS选项中的全部内容后重启。
-2. 5G：拨号\*#\*#4636#\*#\*，进入第一项即可找到调整选项。
-3. 双击亮屏：在Phh Treble Settings中的Xiaomi选项中开启DT2W。
-4. 相机优化：寻找谷歌相机相关教程或移植MIUI相机。
-5. AOD：（或通过模块）在Phh Treble Settings中的Misc选项中开启Force Allow Always-On Display。
+## Xiaomi 12S GSI其他问题优化
+1. 双击亮屏：设置->Phh Treble Settings->Xiaomi features->Enable DT2W
+2. VoLTE：设置->Phh Treble Settings->IMS features四个选项都点一遍（第二个选项会下载ims.apk，可以在通知中心查看进度，下载完后安装并重启
+3. 5G：拨号\*#\*#4636#\*#\*->手机信息->首选网络类型，拉到底下倒数第二个（最长的那个）就是
 
-注：前4项未通过模块实现，无论是否安装模块都要执行。
+注：未通过模块实现，无论是否安装模块都要执行。
 
 ## 使用的其他源代码
-1. TrebleDroid/vendor_hardware_overlay：vendor_hardware_overlay模板。
-2. cupid-development多个仓库：部分overlay内容。
-3. Iconify for 部分UI圆角调整。
+1. TrebleDroid/vendor_hardware_overlay：vendor_hardware_overlay模板
+2. cupid-development多个仓库：部分overlay内容
+3. Iconify for 部分UI圆角调整
+4. Xiaomi：部分overlay内容
+5. Magisk：Magisk模块
+

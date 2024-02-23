@@ -1,6 +1,6 @@
-# Xiaomi 12S（mayfly）GSI优化
+# [Public Achieved] Xiaomi 12S（mayfly）GSI优化
 
-测试中，不完善。
+停止更新
 
 ## 优化内容
 1. 修复 自动亮度（体验不如官方）

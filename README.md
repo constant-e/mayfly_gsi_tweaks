@@ -1,4 +1,4 @@
-# [Public Achieved] Xiaomi 12S（mayfly）GSI优化
+# [Public Archived] Xiaomi 12S（mayfly）GSI优化
 
 停止更新
 
